@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loopstudios Landing Page | Code-Beaker</title>
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="stylesheet" href="typeScales.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <picture>
+        <source
+          media="(min-width: 50rem)"
+          srcset="./assets/images/desktop/image-hero.jpg"
+        />
+        <img
+          class="header__bg"
+          src="assets/images/mobile/image-hero.jpg"
+          alt=""
+        />
+      </picture>
+      <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+          <img
+            src="assets/images/logo.svg"
+            alt=""
+            class="navbar__brand--logo"
+          />
+        </a>
+        <ul class="navbar__links">
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link">About</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link">Careers</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link">Events</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link">Products</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="header__hero">
+        <article class="header__hero--wrapper">
+          <h1 class="header__hero--title">
+            Immersive experiences that deliver
+          </h1>
+        </article>
+      </section>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <section class="main__section main__section--about">
+        <div class="main__section--cols main__section--about__cols">
+          <div class="main__section--about__image">
+            <picture>
+              <source
+                media="(min-width: 50rem)"
+                srcset="assets/images/desktop/image-interactive.jpg"
+              />
+            </picture>
+            <img
+              src="assets/images/mobile/image-interactive.jpg"
+              alt="Man using a VR headset while playing a video game"
+              class="main__section--about__img"
+            />
+          </div>
+          <article class="main__section--about__text-content">
+            <h2 class="main__section--about__heading">
+              The leader in interactive VR
+            </h2>
+            <p class="main__section--about__text">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Gallery -->
+      <section class="main__section main__section--gallery">
+        <div class="main__section--gallery__header">
+          <h2 class="main__section--gallery__heading">our creations</h2>
+          <a
+            href="#"
+            aria-label="see all works"
+            class="main__section--gallery__btn-border"
+          >
+            See all
+          </a>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

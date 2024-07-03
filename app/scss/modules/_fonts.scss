@@ -1,0 +1,20 @@
+$fonts: (
+  title: "Alata",
+  text: "JoseFin Sans",
+);
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}

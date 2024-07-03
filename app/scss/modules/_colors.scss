@@ -1,0 +1,10 @@
+$colors: (
+  primary__white: hsl(0, 0%, 100%),
+  primary__black: hsl(0, 0%, 0%),
+  primary__dark-gray: hsl(0, 0%, 55%),
+  primary__very-dark-gray: hsl(0, 0%, 41%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

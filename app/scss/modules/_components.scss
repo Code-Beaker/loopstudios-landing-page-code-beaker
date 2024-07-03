@@ -1,0 +1,38 @@
+@mixin navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+
+@mixin navlink($color, $weight, $size) {
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  text-decoration: none;
+  display: block;
+  text-underline-offset: 0.125rem;
+
+  &:hover {
+    text-decoration: underline 0.125rem;
+  }
+}
+
+@mixin buttonborder($color, $bg, $border, $size, $weight, $hoverColor) {
+  color: $color;
+  background-color: $bg;
+  border: 0.125rem solid $border;
+  font-size: $size;
+  font-weight: $weight;
+  display: block;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+  transition: 75ms ease-in-out;
+
+  &:hover {
+    color: $hoverColor;
+    background-color: $color;
+  }
+}
