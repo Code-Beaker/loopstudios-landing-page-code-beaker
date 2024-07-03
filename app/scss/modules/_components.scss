@@ -11,10 +11,20 @@
   font-size: $size;
   text-decoration: none;
   display: block;
+  padding: 0.25rem 0.5rem;
   text-underline-offset: 0.125rem;
+  outline-offset: 0.125rem;
 
   &:hover {
     text-decoration: underline 0.125rem;
+  }
+
+  &:active {
+    opacity: 0.85;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dashed $color;
   }
 }
 
@@ -29,10 +39,19 @@
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   text-decoration: none;
+  outline-offset: 0.125rem;
   transition: 75ms ease-in-out;
 
   &:hover {
     color: $hoverColor;
     background-color: $color;
+  }
+
+  &:active {
+    scale: 0.95;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dashed $color;
   }
 }
