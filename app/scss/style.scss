@@ -356,9 +356,19 @@ body {
       m.weight(semibold),
       m.color(primary__white)
     );
-    margin: 3rem calc(3 * 3rem);
+    margin: 3rem calc(2.5 * 3rem);
     text-align: center;
-    display: block;
+    display: none;
+
+    &:active {
+      scale: 0.95;
+    }
+
+    @media only screen and (width < 50rem) {
+      & {
+        display: block;
+      }
+    }
   }
 }
 
