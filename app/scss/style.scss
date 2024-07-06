@@ -356,9 +356,10 @@ body {
       m.weight(semibold),
       m.color(primary__white)
     );
-    margin: 3rem calc(2.5 * 3rem);
+    margin: 3rem calc(2 * 3rem);
     text-align: center;
     display: none;
+    min-width: fit-content;
 
     &:active {
       scale: 0.95;
