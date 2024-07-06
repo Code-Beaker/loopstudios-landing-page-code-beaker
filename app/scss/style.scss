@@ -84,6 +84,24 @@ body {
   position: relative;
   z-index: 2;
 
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__toggle-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    transition: 100ms ease;
+
+    &:active {
+      scale: 0.95;
+    }
+  }
+
   @media screen and (width < 50rem) {
     & {
       background-color: hsla(from m.color(primary__black) h s l / 0.75);
@@ -110,6 +128,8 @@ body {
     @media screen and (width < 50rem) {
       & {
         display: none;
+        flex-direction: column;
+        padding: 1rem 0;
       }
     }
   }
