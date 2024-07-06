@@ -153,7 +153,8 @@ body {
     @media only screen and (width < 50rem) {
       position: relative;
       inset: 0;
-      padding: 1rem;
+      padding: 3rem calc(3rem / 2);
+      text-align: center;
     }
   }
 
