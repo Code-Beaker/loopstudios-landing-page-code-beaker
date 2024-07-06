@@ -3,6 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 4rem;
+
+  // settings for mobile
+  @media only screen and (width < 50rem) {
+    & {
+      gap: 1rem;
+      padding: 1.5rem;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+  }
 }
 
 @mixin navlink($color, $weight, $size) {
@@ -58,4 +72,11 @@
 
 .footer {
   padding: 2.5rem 5rem;
+
+  // settings for mobile
+  @media only screen and (width < 50rem) {
+    & {
+      padding: 2rem;
+    }
+  }
 }
