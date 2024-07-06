@@ -95,10 +95,24 @@ body {
     display: block;
     background-color: transparent;
     border: none;
+    display: none;
+    border-radius: 0.25rem;
     transition: 100ms ease;
+    padding: 0.5rem;
 
     &:active {
       scale: 0.95;
+    }
+
+    &:focus {
+      background-color: hsla(from m.color(primary__dark-gray) h s l / 0.25);
+      outline: none;
+    }
+
+    @media screen and (width < 50rem) {
+      & {
+        display: block;
+      }
     }
   }
 
@@ -132,6 +146,10 @@ body {
         padding: 1rem 0;
       }
     }
+  }
+
+  .links-show {
+    display: flex;
   }
 
   &__links--link {
