@@ -68,7 +68,7 @@ npm run build
 
 ### Coding the project
 
-This part took around a week. Coded with Visual Studio Code entirely and tested with **Mozilla Firefox(127)** and **Brave's latest build**. Tested on **Samsung Galaxy A13** for responsiveness.
+This part took around a week. Coded with Visual Studio Code entirely and tested with **Mozilla Firefox(127)** and **Brave's latest build**. Used on **Samsung Galaxy A13** for testing mobile responsiveness.
 
 Used SCSS so that I can make my workflow better and faster with nesting and mixins. I didn't wait for the project to be finished. Instead, I pushed it to github and deployed using Vercel to make sure the live site also works as expected.
 
